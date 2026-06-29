@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Qr-Code_Generator</title>
+</head>
+<body>
+    <div>
+        <h1>Qr-Code_Generator</h1>
+        
+        <textarea placeholder="Enter any text ..." id="text"></textarea>
+        
+        <label for="qrColor">QR Color:</label>
+        <input type="color" id="qrColor" value="#000000">
+        <label for="bgColor">Background:</label>
+        <input type="color" id="bgColor" value="#ffffff">
+
+        <p id="message"></p>
+
+        <button onclick="generateQR()"> Generate QR </button>
+        <button onclick="clearQr()">clear</button>
+
+        <br><br>
+
+        <div id="result">
+            <img id="qrImage">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
